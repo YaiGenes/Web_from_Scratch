@@ -1,3 +1,152 @@
-h1 {
-    color: red;
+/*All document*/
+
+html {
+    width: 980px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/*HEADER*/
+
+header {
+    background-color: #fff;
+    height: 40px;
+}
+
+
+/*Nav Bar*/
+
+.flex {
+    display: flex;
+}
+
+.flex .logo {
+    flex-basis: 10%;
+}
+
+.flex .navbar {
+    flex-basis: 90%;
+    color: darkred;
+    text-align: center;
+}
+
+.flex .navbar li {
+    display: inline;
+    padding-left: 10px;
+}
+
+.flex .navbar li a {
+    color: darkred;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+/*MAIN*/
+
+
+/*1-Grid*/
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: "a a a" "b c d";
+    grid-template-rows: auto auto;
+}
+
+.grid1::before {
+    content: inherit;
+}
+
+.grid1>.horizontal1 {
+    grid-area: a;
+    background-image: url(/assets/images/horizontal1.jpg);
+    background-repeat: no-repeat;
+    padding: 1 rem;
+}
+
+.grid1>.vertical1 {
+    grid-area: b;
+    background-image: url(/assets/images/vertical1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1 rem;
+}
+
+.grid1>.vertical2 {
+    grid-area: c;
+    background-image: url(/assets/images/vertical2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1 rem;
+}
+
+.grid1>.vertical3 {
+    grid-area: d;
+    background-image: url(/assets/images/vertical3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1 rem;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b" "c c";
+    grid-template-rows: auto auto;
+}
+
+.grid2>.horizontal2 {
+    grid-area: a;
+    background-image: url(/assets/images/horizontal2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1 rem;
+}
+
+.grid2>.horizontal3 {
+    grid-area: b;
+    background-image: url(/assets/images/horizontal3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1 rem;
+}
+
+.grid2>.email {
+    grid-area: c;
+    background-color: green;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1 rem;
+}
+
+
+/*FOOTER*/
+
+.gridfoot {
+    background-color: darkred;
+    font-size: small;
+    color: #fff;
+    height: 250px;
+    padding: 20px 10px;
+}
+
+.gridfoot div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.gridfoot a {
+    color: white;
+    text-decoration: none;
+}
+
+.gridfoot a h2 {
+    font-weight: bold;
 }
