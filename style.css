@@ -3,6 +3,7 @@
 html {
     max-width: 980px;
     font-family: 'Work Sans', sans-serif;
+    margin: auto;
 }
 
 h1 {
@@ -35,9 +36,8 @@ header {
 
 .flex .navbar {
     flex-basis: 90%;
-    background-color: #CF2C30;
-    color: white;
     text-align: center;
+    background-color: #fff;
 }
 
 .flex .navbar li {
@@ -48,7 +48,7 @@ header {
 }
 
 .flex .navbar li a {
-    color: white;
+    color: #CF2C30;
     text-decoration: none;
     font-size: 12px;
 }
@@ -219,9 +219,11 @@ header {
     text-align: center;
 }
 
-.email>i {
+.email>img {
     display: block;
-    margin: inherit;
+    position: inherit;
+    width: 20px;
+    height: 20px;
 }
 
 .email>button {
@@ -262,8 +264,8 @@ header {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 1px;
     grid-template-areas: "a b" "c c";
+    margin-right: 20px;
 }
 
 .gridsocial1 {
@@ -276,4 +278,29 @@ header {
 
 .gridsocial3 {
     grid-area: c;
+}
+
+.phone::before {
+    content: "f87b";
+    color: white;
+    display: inline;
+}
+
+.world::before {
+    content: "f57d";
+    color: white;
+    display: inline;
+}
+
+.social {
+    display: inline;
+    height: 8px;
+    width: 8px;
+    fill: white;
+}
+
+.stars {
+    display: inline;
+    height: 6px;
+    fill: white;
 }
