@@ -23,6 +23,12 @@ header {
     height: 40px;
 }
 
+.logo>img {
+    width: 40px;
+    height: 40px;
+    padding: auto auto;
+}
+
 
 /*Nav Bar*/
 
@@ -61,7 +67,7 @@ header {
 
 .grid1 {
     display: grid;
-    grid-template-rows: 50em 70vh auto;
+    grid-template-rows: 30em 70vh auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
     grid-template-areas: "a a a" "b c d";
@@ -151,6 +157,9 @@ header {
     color: black;
 }
 
+
+/*2-Grid*/
+
 .grid2 {
     display: grid;
     grid-template-rows: 25em auto;
@@ -206,6 +215,9 @@ header {
     color: black;
 }
 
+
+/*Email*/
+
 .email {
     background-color: white;
     background-size: cover;
@@ -215,18 +227,25 @@ header {
     align-items: center;
 }
 
-.email>p {
+.email>ul {
     text-align: center;
+    line-height: 3;
 }
 
-.email>img {
-    display: block;
-    position: inherit;
-    width: 20px;
-    height: 20px;
+li>p {
+    text-align: center;
+    display: inline;
 }
 
-.email>button {
+li>.envelope {
+    display: inline;
+    margin: 0;
+    padding: 0 0;
+    width: 40px;
+    height: 40px;
+}
+
+li>button {
     display: block;
     margin: auto;
     background-color: #CF2C30;
@@ -246,8 +265,8 @@ header {
     background-color: #CF2C30;
     font-size: 8px;
     color: #fff;
-    height: 250px;
-    padding: 30px 10px;
+    height: 150px;
+    padding: 20px 8px;
 }
 
 .gridfoot a {
@@ -259,6 +278,9 @@ header {
     font-weight: bold;
     font-size: 8px;
 }
+
+
+/*Socialgrid*/
 
 .gridsocial {
     display: grid;
